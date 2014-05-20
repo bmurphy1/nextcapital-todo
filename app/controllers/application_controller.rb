@@ -1,11 +1,17 @@
 class ApplicationController < ActionController::Base
   before_filter :authenticate_user_from_token!
 
+  after_filter :set_cors_headers
+
   rescue_from(Exception) do |e|
     render :json => {:error => e.message}, status => 500
   end
 
   private
+
+  def set_cors_headers
+    response.headers['Access-Control-Allow-Origin'] = '*'
+  end
 
   # TokenAuthenticatable is no longer supported in Devise -
   # https://gist.github.com/josevalim/fb706b1e933ef01e4fb6
