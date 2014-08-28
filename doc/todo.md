@@ -68,7 +68,7 @@ curl -H "Content-Type: application/json" -d '{ "api_token": "some_token", "todo"
     "is_complete": false
 }
 ```
-#### `PUT /users/:user_id/todos`
+#### `PUT /users/:user_id/todos/:todo_id`
 
 ##### Parameters
 
