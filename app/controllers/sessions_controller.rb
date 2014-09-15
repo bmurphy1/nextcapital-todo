@@ -18,9 +18,19 @@ class SessionsController < Devise::SessionsController
 
       sign_in("user", resource)
 
-      render :json => resource.to_json(:except => [:created_at, :updated_at]) and return
+      render :json => _to_json(resource, {
+        :include => { :todos => { :only => :id } },
+        :except => [:created_at, :updated_at]
+      }) and return
     end
 
     login_error "Password is not valid."
   end
+
+  def _to_json resource, opts
+    json = resource.as_json(opts)
+    json['todos'] = json['todos'].map { |todo| todo['id'] }
+    json.to_json
+  end
+
 end
