@@ -17,6 +17,7 @@ The TODO API enables users to create and manage TODOs.
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [GET /users/:user_id/todos](/doc/todo.md#get-usersuser_idtodos) | Get a user's TODOs|
-| [POST /users/:user_id/todos](doc/todo.md#post-usersuser_idtodos) | Create a TODO|
+| [GET /users/:user_id/todos](/doc/todo.md#get-usersuser_idtodos)     | Get a user's TODOs|
+| [POST /users/:user_id/todos](doc/todo.md#post-usersuser_idtodos)    | Create a TODO|
 | [PUT /users/:user_id/todos/:id](/doc/todo.md#put-usersuser_idtodos) | Update a TODO|
+| [GET /users/:user_id/todos/:id](/doc/todo.md#get-usersuser_idtodos) | Get a TODO|

@@ -27,7 +27,8 @@ curl -H "Content-Type: application/json" -d '{"email": "user1@example.org", "pas
 {
     "api_token": "2FxozzbPWxzDTedCrixy",
     "email": "user1@example.org",
-    "id": 1
+    "id": 1,
+    "todos": [1,2,3]
 }
 ```
 
