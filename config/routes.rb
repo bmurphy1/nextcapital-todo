@@ -7,6 +7,8 @@ TodoList::Application.routes.draw do
     resources :todos
   end
 
+  match '/*path' => 'application#cors_preflight_check', :via => :options
+
   root to: "application#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
