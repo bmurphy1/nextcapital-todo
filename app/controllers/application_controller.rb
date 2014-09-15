@@ -25,8 +25,8 @@ class ApplicationController < ActionController::Base
   def authenticate_user_from_token!
     user_id = params[:user_id].presence
     user = user_id && User.find(user_id)
-
-    if user && Devise.secure_compare(user.api_token, params[:api_token])
+    api_token = params[:api_token] || env['HTTP_API_TOKEN']
+    if user && Devise.secure_compare(user.api_token, api_token)
       sign_in user, store: false and return
     end
 
