@@ -5,11 +5,16 @@ class ApplicationController < ActionController::Base
 
   rescue_from(Exception) do |e|
     set_cors_headers
-    render :json => {:error => e.message}, status => 500
+    render_error({ :error => e.message }, 500)
   end
 
   def cors_preflight_check
     render :text => '', :content_type => 'text/plain'
+  end
+
+  def render_error message_json, status = 400
+    set_cors_headers
+    render :json => message_json, :status => status
   end
 
   private
@@ -30,11 +35,6 @@ class ApplicationController < ActionController::Base
       sign_in user, store: false and return
     end
 
-    login_error "Please sign in first."
-  end
-
-  def login_error message
-    set_cors_headers
-    render :json => {:message => message}, :status => 400
+    render_error({ :error => "Please sign in first." })
   end
 end
