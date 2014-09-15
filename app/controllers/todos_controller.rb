@@ -9,6 +9,10 @@ class TodosController < ApplicationController
     render :json => todo.to_json(:except => [:user_id])
   end
 
+  def show
+    render :json => current_user.todos.find(params[:id])
+  end
+
   def create
     render :json => current_user.todos.create(todo_params).to_json(:except => [:user_id])
   end
