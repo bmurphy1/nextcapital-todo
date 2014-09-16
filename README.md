@@ -1,10 +1,38 @@
-# TODO JSON Server
+# NextCapital To-Do List Challenge
 
-## Overview
+As the first step in our interview process, we'd like you to build a small to-do list webapp that integrates with the RESTful JSON API defined in this project.
 
-The TODO API enables users to create and manage TODOs.
+The API is publicly accessible at http://recruiting-api.nextcapital.com. The API endpoints are documented below.
 
-## API
+## Solution Requirements
+
+At a minimum, your users should be able to:
+
+* Sign up
+* Log in
+* See a list of all their to-dos
+* Create new to-dos
+* Mark to-dos as complete
+* Reorder their to-dos (this is just client-side)
+
+Please make your app look at least decent. Don't be afraid to write some unit tests as well.
+
+## Technology and Tools
+
+You can accomplish this with whatever technology and tools you want. If you'd like, you can use [this Javascript API client](https://github.com/clarkr/nextcapital-todo-api-client-jquery), but are not required to.
+
+## Submitting
+
+When you're all done, send us:
+
+1. Your source code (preferably on GitHub)
+1. A link to your working application
+
+## Above and Beyond
+
+If you're feeling ambitious, feel free to fork this repository and add API routes, add ordering to tasks, fix bugs, or whatever else you want. Please don't modify any existing API endpoints or behavior, though.
+
+## API Endpoints
 
 ### Session
 
