@@ -13,7 +13,7 @@ At a minimum, your users should be able to:
 * See a list of all their to-dos
 * Create new to-dos
 * Mark to-dos as complete
-* Reorder their to-dos
+* Reorder their to-dos (this is just client-side)
 
 Please make your app look at least decent. Don't be afraid to write some unit tests as well.
 
@@ -30,7 +30,7 @@ When you're all done, send us:
 
 ## Above and Beyond
 
-If you're feeling ambitious, feel free to fork this repository and add API routes, fix bugs, or whatever else you want. Please don't modify any existing API endpoints or behavior, though.
+If you're feeling ambitious, feel free to fork this repository and add API routes, add ordering to tasks, fix bugs, or whatever else you want. Please don't modify any existing API endpoints or behavior, though.
 
 ## API Endpoints
 
