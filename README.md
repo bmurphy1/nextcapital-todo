@@ -30,7 +30,7 @@ When you're all done, send us:
 
 ## Above and Beyond
 
-If you're feeling ambitious, feel free to fork this repository and add API routes, add ordering to tasks, fix bugs, or whatever else you want. Please don't modify any existing API endpoints or behavior, though.
+If you're feeling ambitious, feel free to fork this repository and add API routes, add ordering to to-dos, fix bugs, or whatever else you want. Please don't modify any existing API endpoints or behavior, though.
 
 ## API Endpoints
 
@@ -45,7 +45,7 @@ If you're feeling ambitious, feel free to fork this repository and add API route
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [GET /users/:user_id/todos](/doc/todo.md#get-usersuser_idtodos)     | Get a user's TODOs|
-| [POST /users/:user_id/todos](doc/todo.md#post-usersuser_idtodos)    | Create a TODO|
-| [PUT /users/:user_id/todos/:id](/doc/todo.md#put-usersuser_idtodos) | Update a TODO|
-| [GET /users/:user_id/todos/:id](/doc/todo.md#get-usersuser_idtodos) | Get a TODO|
+| [GET /users/:user_id/todos](/doc/todo.md#get-usersuser_idtodos)     | Get a user's to-dos|
+| [POST /users/:user_id/todos](doc/todo.md#post-usersuser_idtodos)    | Create a to-do|
+| [GET /users/:user_id/todos/:id](/doc/todo.md#get-usersuser_idtodos) | Get a to-do|
+| [PUT /users/:user_id/todos/:id](/doc/todo.md#put-usersuser_idtodos) | Update a to-do|
