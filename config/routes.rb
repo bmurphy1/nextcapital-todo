@@ -8,6 +8,7 @@ TodoList::Application.routes.draw do
   end
 
   match '/*path' => 'application#cors_preflight_check', :via => :options
+  match '/doc/:doc_file' => 'docs#index', :via => :get
 
   root to: "application#index"
   # The priority is based upon order of creation: first created -> highest priority.
