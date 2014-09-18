@@ -34,6 +34,12 @@ If you're feeling ambitious, feel free to fork this repository and add API route
 
 ## API Endpoints
 
+### User
+
+| Endpoint                               | Description        |
+| -------------------------------------- | ------------------ |
+| [POST /users](/doc/user.md#post-users) | Create a new user. |
+
 ### Session
 
 | Endpoint                                                            | Description         |
