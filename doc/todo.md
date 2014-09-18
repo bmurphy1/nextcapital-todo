@@ -18,7 +18,7 @@
 ##### Example Request
 
 ```bash
-curl -H "Content-Type: application/json" -X GET http://localhost:3000/users/1/todos.json?api_token=KyvGjBHBeDsBeNsXx9XP | python -m json.tool
+curl -H "Content-Type: application/json" -X GET http://recruiting-api.nextcapital.com/users/1/todos.json?api_token=KyvGjBHBeDsBeNsXx9XP | python -m json.tool
 ```
 
 ##### Example Response
@@ -56,7 +56,7 @@ curl -H "Content-Type: application/json" -X GET http://localhost:3000/users/1/to
 ##### Example Request 
 
 ```bash
-curl -H "Content-Type: application/json" -d '{ "api_token": "some_token", "todo": {"description": "A description"}}' -X POST "http://localhost:3000/users/1/todos"
+curl -H "Content-Type: application/json" -d '{ "api_token": "some_token", "todo": {"description": "A description"}}' -X POST "http://recruiting-api.nextcapital.com/users/1/todos"
 ```
 
 ##### Example Response
@@ -81,7 +81,7 @@ curl -H "Content-Type: application/json" -d '{ "api_token": "some_token", "todo"
 ##### Example Request 
 
 ```bash
-curl -H "Content-Type: application/json" -d '{"api_token":"EaL-RBx8U8FD9D4wRWP1", "todo": {"description": "Updated description", "is_complete": true}}' -X PUT http://localhost:3000/users/1/todos/22
+curl -H "Content-Type: application/json" -d '{"api_token":"EaL-RBx8U8FD9D4wRWP1", "todo": {"description": "Updated description", "is_complete": true}}' -X PUT http://recruiting-api.nextcapital.com/users/1/todos/22
 ```
 
 ##### Example Response
@@ -107,7 +107,7 @@ curl -H "Content-Type: application/json" -d '{"api_token":"EaL-RBx8U8FD9D4wRWP1"
 ##### Example Request
 
 ```bash
-curl -H "Content-Type: application/json" -X GET http://localhost:3000/users/1/todos/1?api_token=KyvGjBHBeDsBeNsXx9XP | python -m json.tool
+curl -H "Content-Type: application/json" -X GET http://recruiting-api.nextcapital.com/users/1/todos/1?api_token=KyvGjBHBeDsBeNsXx9XP | python -m json.tool
 ```
 
 ##### Example Response

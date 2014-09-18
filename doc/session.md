@@ -18,7 +18,7 @@
 ##### Example Request 
 
 ```bash
-curl -H "Content-Type: application/json" -d '{"email": "user1@example.org", "password": "password"}' -X POST "http://localhost:3000/users/sign_in"
+curl -H "Content-Type: application/json" -d '{"email": "user1@example.org", "password": "password"}' -X POST "http://recruiting-api.nextcapital.com/users/sign_in"
 ```
 
 ##### Example Response
@@ -45,7 +45,7 @@ curl -H "Content-Type: application/json" -d '{"email": "user1@example.org", "pas
 ##### Example Request 
 
 ```bash
-curl -H "Content-Type: application/json" -d '{"api_token": "some_token", "user_id": 1}' -X DELETE "http://localhost:3000/users/sign_out"
+curl -H "Content-Type: application/json" -d '{"api_token": "some_token", "user_id": 1}' -X DELETE "http://recruiting-api.nextcapital.com/users/sign_out"
 ```
 
 ##### Example Response
