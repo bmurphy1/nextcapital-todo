@@ -1,18 +1,18 @@
-### TODO
+### Todo
 
-| Endpoint | Description |
-| ---- | --------------- |
-| [GET /users/:user_id/todos](/doc/todo.md#get-usersuser_idtodos) | Get a user's TODOs|
-| [POST /users/:user_id/todos](/doc/todo.md#post-usersuser_idtodos) | Create a TODO|
-| [PUT /users/:user_id/todos/:id](/doc/todo.md#put-usersuser_idtodos) | Update a TODO|
+| Endpoint                                                            | Description         |
+| ------------------------------------------------------------------- | ------------------- |
+| [GET /users/:user_id/todos](/doc/todo.md#get-usersuser_idtodos)     | Get a user's todos. |
+| [POST /users/:user_id/todos](/doc/todo.md#post-usersuser_idtodos)   | Create a todo.      |
+| [PUT /users/:user_id/todos/:id](/doc/todo.md#put-usersuser_idtodos) | Update a todo.      |
 
 #### `GET /users/:user_id/todos`
 
 ##### Parameters
 
-| Name  | Required? | Type   | Description |
-| ----  | --------- | ----   | ----------- |
-| user_id | Yes       | String | ID for the user. |
+| Name      | Required? | Type   | Description                        |
+| --------- | --------- | ------ | ---------------------------------- |
+| user_id   | Yes       | String | ID for the user.                   |
 | api_token | Yes       | String | API token for this user's session. |
 
 ##### Example Request
@@ -47,11 +47,11 @@ curl -H "Content-Type: application/json" -X GET http://localhost:3000/users/1/to
 
 ##### Parameters
 
-| Name  | Required? | Type   | Description |
-| ----  | --------- | ----   | ----------- |
-| user_id | Yes       | String | ID for the user. |
-| api_token | Yes       | String | API token for this user's session. |
-| todo | Yes       | Object |  Object describing the todo to be created|
+| Name      | Required? | Type   | Description                               |
+| --------- | --------- | ------ | ----------------------------------------- |
+| user_id   | Yes       | String | ID for the user.                          |
+| api_token | Yes       | String | API token for this user's session.        |
+| todo      | Yes       | Object | Object describing the todo to be created. |
 
 ##### Example Request 
 
@@ -72,11 +72,11 @@ curl -H "Content-Type: application/json" -d '{ "api_token": "some_token", "todo"
 
 ##### Parameters
 
-| Name  | Required? | Type   | Description |
-| ----  | --------- | ----   | ----------- |
-| user_id | Yes       | String | ID for the user. |
-| api_token | Yes       | String | API token for this user's session. |
-| todo | Yes       | Object |  Object describing the todo to be created
+| Name      | Required? | Type   | Description                               |
+| --------- | --------- | ------ | ----------------------------------------- |
+| user_id   | Yes       | String | ID for the user.                          |
+| api_token | Yes       | String | API token for this user's session.        |
+| todo      | Yes       | Object | Object describing the todo to be created. |
 
 ##### Example Request 
 
@@ -98,11 +98,11 @@ curl -H "Content-Type: application/json" -d '{"api_token":"EaL-RBx8U8FD9D4wRWP1"
 
 ##### Parameters
 
-| Name      | Required? | Type   | Description |
-| ----      | --------- | ----   | ----------- |
-| user_id   | Yes       | String | ID for the user. |
+| Name      | Required? | Type   | Description                        |
+| --------- | --------- | ------ | ---------------------------------- |
+| user_id   | Yes       | String | ID for the user.                   |
 | api_token | Yes       | String | API token for this user's session. |
-| id        | Yes       | String | The id of the todo to show. |
+| id        | Yes       | String | The id of the todo to show.        |
 
 ##### Example Request
 

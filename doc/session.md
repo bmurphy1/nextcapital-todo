@@ -1,17 +1,17 @@
 ### Session
 
-| Endpoint | Description |
-| ---- | --------------- |
-| [POST /users/sign_in](/doc/session.md#post-userssign_in) | Start a session |
-| [DELETE /users/sign_out](/doc/session.md#delete-userssign_out) | End a session |
+| Endpoint                                                       | Description     |
+| -------------------------------------------------------------- | --------------- |
+| [POST /users/sign_in](/doc/session.md#post-userssign_in)       | Start a session |
+| [DELETE /users/sign_out](/doc/session.md#delete-userssign_out) | End a session   |
 
 #### `POST /users/sign_in`
 
 ##### Parameters
 
-| Name  | Required? | Type   | Description |
-| ----  | --------- | ----   | ----------- |
-| email | Yes       | String | Email for the user. |
+| Name     | Required? | Type   | Description            |
+| -------- | --------- | ------ | ---------------------- |
+| email    | Yes       | String | Email for the user.    |
 | password | Yes       | String | Password for the user. |
 
 
@@ -36,9 +36,9 @@ curl -H "Content-Type: application/json" -d '{"email": "user1@example.org", "pas
 
 ##### Parameters
 
-| Name  | Required? | Type   | Description |
-| ----  | --------- | ----   | ----------- |
-| user_id | Yes       | String | ID for the user. |
+| Name      | Required? | Type   | Description                        |
+| --------- | --------- | ------ | ---------------------------------- |
+| user_id   | Yes       | String | ID for the user.                   |
 | api_token | Yes       | String | API token for this user's session. |
 
 
