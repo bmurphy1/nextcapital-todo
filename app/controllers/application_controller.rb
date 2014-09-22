@@ -1,10 +1,12 @@
 class ApplicationController < ActionController::Base
-  before_filter :authenticate_user_from_token!, :except => [ :cors_preflight_check, :index ]
+  before_filter :authenticate_user_from_token!, :except => :cors_preflight_check
 
   after_filter :set_cors_headers
 
   rescue_from(Exception) do |e|
     set_cors_headers
+    puts e.message
+    puts e.backtrace.join("\n")
     render_error({ :error => e.message }, 500)
   end
 
@@ -15,14 +17,6 @@ class ApplicationController < ActionController::Base
   def render_error message_json, status = 400
     set_cors_headers
     render :json => message_json, :status => status
-  end
-
-  def index
-    @text = parse_markdown "#{Rails.root}/README.md"
-  end
-
-  def parse_markdown file
-    @text = GitHub::Markup.render(file, File.read(file)).html_safe
   end
 
   private

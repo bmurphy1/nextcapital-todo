@@ -1,8 +1,8 @@
 ### User
 
-| Endpoint                               | Description        |
-| -------------------------------------- | ------------------ |
-| [POST /users](/doc/user.md#post-users) | Create a new user. |
+| Endpoint                                  | Description        |
+| ----------------------------------------- | ------------------ |
+| [POST /users](/public/user.md#post-users) | Create a new user. |
 
 #### `POST /users`
 

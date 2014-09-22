@@ -1,10 +1,10 @@
 ### Todo
 
-| Endpoint                                                            | Description         |
-| ------------------------------------------------------------------- | ------------------- |
-| [GET /users/:user_id/todos](/doc/todo.md#get-usersuser_idtodos)     | Get a user's todos. |
-| [POST /users/:user_id/todos](/doc/todo.md#post-usersuser_idtodos)   | Create a todo.      |
-| [PUT /users/:user_id/todos/:id](/doc/todo.md#put-usersuser_idtodos) | Update a todo.      |
+| Endpoint                                                               | Description         |
+| ---------------------------------------------------------------------- | ------------------- |
+| [GET /users/:user_id/todos](/public/todo.md#get-usersuser_idtodos)     | Get a user's todos. |
+| [POST /users/:user_id/todos](/public/todo.md#post-usersuser_idtodos)   | Create a todo.      |
+| [PUT /users/:user_id/todos/:id](/public/todo.md#put-usersuser_idtodos) | Update a todo.      |
 
 #### `GET /users/:user_id/todos`
 

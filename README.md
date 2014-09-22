@@ -38,20 +38,20 @@ If you're feeling ambitious, feel free to fork this repository and add API route
 
 | Endpoint                               | Description        |
 | -------------------------------------- | ------------------ |
-| [POST /users](/doc/user.md#post-users) | Create a new user. |
+| [POST /users](/public/user.md#post-users) | Create a new user. |
 
 ### Session
 
 | Endpoint                                                            | Description         |
 | ------------------------------------------------------------------- | ------------------- |
-| [POST /users/sign_in](/doc/session.md#post-userssign_in)            | Start a session.    |
-| [DELETE /users/sign_out](/doc/session.md#delete-userssign_out)      | End a session.      |
+| [POST /users/sign_in](/public/session.md#post-userssign_in)            | Start a session.    |
+| [DELETE /users/sign_out](/public/session.md#delete-userssign_out)      | End a session.      |
 
 ### Todo
 
 | Endpoint                                                            | Description         |
 | ------------------------------------------------------------------- | ------------------- |
-| [GET /users/:user_id/todos](/doc/todo.md#get-usersuser_idtodos)     | Get a user's todos. |
-| [POST /users/:user_id/todos](/doc/todo.md#post-usersuser_idtodos)   | Create a todo.      |
-| [GET /users/:user_id/todos/:id](/doc/todo.md#get-usersuser_idtodos) | Get a todo.         |
-| [PUT /users/:user_id/todos/:id](/doc/todo.md#put-usersuser_idtodos) | Update a todo.      |
+| [GET /users/:user_id/todos](/public/todo.md#get-usersuser_idtodos)     | Get a user's todos. |
+| [POST /users/:user_id/todos](/public/todo.md#post-usersuser_idtodos)   | Create a todo.      |
+| [GET /users/:user_id/todos/:id](/public/todo.md#get-usersuser_idtodos) | Get a todo.         |
+| [PUT /users/:user_id/todos/:id](/public/todo.md#put-usersuser_idtodos) | Update a todo.      |

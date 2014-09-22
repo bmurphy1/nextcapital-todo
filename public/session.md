@@ -1,9 +1,9 @@
 ### Session
 
-| Endpoint                                                       | Description     |
-| -------------------------------------------------------------- | --------------- |
-| [POST /users/sign_in](/doc/session.md#post-userssign_in)       | Start a session |
-| [DELETE /users/sign_out](/doc/session.md#delete-userssign_out) | End a session   |
+| Endpoint                                                          | Description     |
+| ----------------------------------------------------------------- | --------------- |
+| [POST /users/sign_in](/public/session.md#post-userssign_in)       | Start a session |
+| [DELETE /users/sign_out](/public/session.md#delete-userssign_out) | End a session   |
 
 #### `POST /users/sign_in`
 
