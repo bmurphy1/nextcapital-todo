@@ -1,5 +1,5 @@
 namespace :todo do
-  desc "Generate html API documentation from markdown."
+  desc 'Generate html API documentation from markdown.'
   task :md_to_html do
     write_html = lambda do |src, target = nil| 
       file = src + '.md'
@@ -10,12 +10,9 @@ namespace :todo do
       lines.each do |line| 
         if line.match(/\/public\/([^\s]+)\.md/)
           line.gsub!(/\/public\//, '')
-    
           line.gsub!(/\.md/, '.html')
         end
       end
-    
-      html = lines.join.html_safe
     
       html = [
         '<html>',
@@ -25,7 +22,7 @@ namespace :todo do
           '</head>',
           '<body>',
             '<div class="markdown-body">',
-              html,
+              lines.join.html_safe,
             '</div>',
           '</body>',
         '</html>'
@@ -35,10 +32,8 @@ namespace :todo do
     end
     
     write_html.call('README', 'public/index.html')
-    
     ['public/session', 'public/user', 'public/todo' ].each do |f|
       write_html.call(f)
     end
-    
   end
 end
