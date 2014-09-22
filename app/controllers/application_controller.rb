@@ -5,8 +5,8 @@ class ApplicationController < ActionController::Base
 
   rescue_from(Exception) do |e|
     set_cors_headers
-    puts e.message
-    puts e.backtrace.join("\n")
+    Rails.logger.debug(e.message)
+    Rails.logger.debug(e.backtrace.join("\n"))
     render_error({ :error => e.message }, 500)
   end
 
