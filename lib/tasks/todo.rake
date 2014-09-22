@@ -1,5 +1,5 @@
 namespace :todo do
-  desc "TODO"
+  desc "Generate html API documentation from markdown."
   task :md_to_html do
     write_html = lambda do |src, target = nil| 
       file = src + '.md'
