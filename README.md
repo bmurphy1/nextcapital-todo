@@ -32,6 +32,12 @@ When you're all done, send us:
 
 If you're feeling ambitious, feel free to fork this repository and add API routes, add ordering to todos, fix bugs, or whatever else you want. Please don't modify any existing API endpoints or behavior, though.
 
+## Reporting Issues
+
+If you run into any unexpected behvaior, please let us know.
+
+If you are reporting unexpected behavior, you should state the behavior you are seeing, what you are expecting to see, a list of the things you've already tried and any significant error logging.
+
 ## API Endpoints
 
 ### User
