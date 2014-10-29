@@ -6,3 +6,4 @@ gem 'sqlite3'
 
 gem 'github-markup'
 gem 'github-markdown'
+gem "rspec-rails", :group => [:development, :test]
