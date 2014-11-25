@@ -12,8 +12,11 @@ At a minimum, your users should be able to:
 * Log in
 * See a list of all their todos
 * Create new todos
+* Edit a todo
 * Mark todos as complete
 * Reorder their todos (this is just client-side)
+
+In addition, please add another feature of your choice.
 
 Please make your app look at least decent. Don't be afraid to write some unit tests as well.
 
